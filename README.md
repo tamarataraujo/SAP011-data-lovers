@@ -90,7 +90,7 @@ Este são os dados que propomos:
   - [Pesquisa com estudantes de geografia](src/data/countries/README.pt.md)
 
 * [Game of Thrones](src/data/got/got.json): Neste conjunto você encontrará uma
-  lista com personagens da série Breaking Bad.
+  lista com personagens da série Game of Thrones.
   - [Pesquisa com seguidores de Game of Thrones](src/data/got/README.pt.md)
 
 * [Tarot](src/data/tarot/tarot.json): Neste conjunto você encontrará uma
