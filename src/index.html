@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="pt-br">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Esta tag é usada para especificar o modo de documento ou modo de compatibilidade que o Internet Explorer (IE) deve usar para renderizar a página da web. --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nixie One' rel='stylesheet'>
     <title>PukeHub</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
 
+<body class="pagina-inicial">
+    <header class="cabecalho-pagina-inicial">
 
-  <body>
-    <div id="root"></div>
-    <p>RAFAELA E TAMARA UHUU</p>
-    <script src="main.js" type="module"></script>
-  </body>
+        <div class="div-logo-inicial">
+        <img src="image/logo.png" alt="Logo pokehub">
+        </div>
+    </header>
+
+    <main>
+        <section class="boas-vindas">
+            <h1>Bem vindo (a) ao PokeHub</h1>
+            <p id="paragrafo"> Seja um mestre Pokemon </p>
+        </section>
+
+        <section class="div-button">
+            <input type="text" id="input-name" placeholder= "Escreva seu nome">
+            <a href="main.html"><button class="button" id="btn-access">Start</button></a>
+        </section>
+                    
+    </main>
+    <script src="userName.js" defer></script>
+</body>
 </html>
