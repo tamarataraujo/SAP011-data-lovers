@@ -28,20 +28,63 @@
         </li>
         </ul>
     </nav>
-
 </header>
+
     <script src="main.js" type="module"></script>
+    
     <main>
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum libero beatae, veniam quis, minus unde a maiores dolor laudantium repellendus obcaecati corporis nisi doloribus voluptatibus consectetur necessitatibus mollitia quaerat perspiciatis!
-            Dolorem ab rem animi autem enim! Accusamus, repellendus, aut fugit explicabo illum placeat, doloremque quia dolore distinctio debitis provident culpa animi ipsam minus itaque nesciunt ad? Doloremque veritatis consectetur sunt.
-            Quas, sed, ut nisi unde libero repellat omnis dolore ratione labore porro ea voluptatum. Error hic doloribus aperiam ut velit magni, minima sunt sequi, iusto mollitia rem voluptate incidunt earum.
-            Officia eum quis cumque, blanditiis, dolorem doloribus quae dolores, facilis laudantium quam impedit nam repellendus necessitatibus minima corporis iusto illo voluptatem quibusdam aspernatur? Iusto est tempora, soluta architecto et eius?
-            Delectus nostrum reprehenderit doloribus eveniet nemo quasi molestias a quaerat repellendus dolore tenetur sapiente impedit temporibus expedita mollitia ad deleniti, unde qui eius quidem provident! Vitae reprehenderit aliquid explicabo velit.</p>
+        <section class="name-button">
+
+            <div class="input-name-pokemon">
+            <input type="text" id="inputPokemon" placeholder= "Escreva o nome do Pokemon">
+            </div>
+
+        <div class="order-input">
+            <label for="order-by"></label>
+            <select name="order" id="order-by" class="filter-order-select">
+                <option value="" >Ordenar por</option>
+                <option value="a-z"> A - Z </option>
+                <option value="z-a"> Z - A </option>
+            </select>
+        </div>
+
+        <div class="type-input">
+                
+            <label for="filter-types"></label>
+            <select name="types" id="filter-types" class="filter-order">
+            <option> Tipos </option>
+            <option value="grass">Planta</option>
+            <option value="poison">Venenoso</option>
+            <option value="fire">Fogo</option>
+            <option value="electric">Elétrico</option>
+            <option value="steel">Aço</option>
+            <option value="dragon">Dragão</option>
+            <option value="fairy">Fada</option>
+            <option value="ghost">Fatasma</option>
+            <option value="ice">Gelo</option>
+            <option value="bug">Inseto</option>
+            <option value="fighting">Lutador</option>
+            <option value="normal">Normal</option>
+            <option value="psychic">Psíquico</option>
+            <option value="dark">Sombrio</option>
+            <option value="ground">Terra</option>
+            <option value="flying">Voador</option>
+            </select>
+        </div>
         </section>
+
+        <section class="display-calc-card">
+            <div class="calculation-display">
+              <p id="calcText">Nesse site você encontrará 251 tipos de pokemons.</p>
+            </div>
+        </section>
+        
+            <section class="allPokemons" id="pokemonList">
+            </section>
+    
 
     </main>
 
-    <footer>Laboratória By Rafaela e Tamara uhuhuhu</footer>
+    <footer>Laboratória By Rafaela e Tamara</footer>
 </body>
 </html>
