@@ -269,16 +269,17 @@ body.pagina-principal {
    
 #pokemonList {
     width: 80%;
-    justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas com tamanhos iguais */
     gap: 20px; /* Espaçamento entre os cards */
     margin-top: 20px; /* Espaçamento acima dos cards */
     margin: 0 auto; /* margin para centralizar os cards do pokemon no centro */
-    
+    background-color: rgb(219, 219, 26);
 }
-  
-  .container-card {
+
+div-cards {
+    background-color: aliceblue;
+    width: 50%;
     width: 60%;
     display: flex;
     box-sizing: border-box;
@@ -286,17 +287,14 @@ body.pagina-principal {
     border: 2px solid #000;
     padding: 10px;
     border-radius: 5px;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
+    margin-left: 20%;
   }
 
 
   
   
-  
-  
-  
-  
 
 
 
@@ -319,7 +317,7 @@ body.pagina-principal {
 
 
 
-
+/* 
 
 @media screen and (max-width: 430px) {
     .logo1 {
@@ -329,4 +327,4 @@ body.pagina-principal {
     .logo2 {
       width: 60vw;
       padding-left: 70px;
-    }
+    } */
