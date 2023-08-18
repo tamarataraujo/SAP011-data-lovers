@@ -23,6 +23,8 @@ function updatePokemonList(filteredPokemons) {
             <p> Nome: ${pokemon.name}  </p>
             <p> Tipo: ${pokemon.type} </p>
             </div>
+
+            
             `;
   
     pkmCards.appendChild(card);
