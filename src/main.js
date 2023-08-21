@@ -24,7 +24,7 @@ function updatePokemonList(filteredPokemons) {
 
                 <div  class="div-cards back"> 
                   <p class="pokemonRarity"> Raridade: ${pokemon.pokemonRarity} </p>
-                  <p class="special-attack"> Resistencia: ${pokemon.resistant} </p>
+                  <p class="specialAttack"> Resistencia: ${pokemon.resistant} </p>
                 </div>
               </div>
             </div>
