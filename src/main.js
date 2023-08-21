@@ -1,13 +1,10 @@
-
+import {searchData} from './data.js';
 import data from './data/pokemon/pokemon.js';
 
 
 const pkmnDataList = data.pokemon; //pega o banco de dados
 
 const pkmCards = document.getElementById("pokemonList"); //pega o espaço onde os cards serão cridos no
-
-
-
 
 
 // PARA PRINTAR O CONTEUDO 
@@ -26,7 +23,6 @@ function updatePokemonList(filteredPokemons) {
                 </div>
 
                 <div  class="div-cards back"> 
-                <img src="/image/pokedex.png" alt="Pokedex image"></img>
                   <p class="pokemonRarity"> Raridade: ${pokemon.pokemonRarity} </p>
                   <p class="special-attack"> Resistencia: ${pokemon.resistant} </p>
                 </div>
@@ -41,6 +37,14 @@ updatePokemonList(pkmnDataList);
 
 
 
+// Filtrar por nome
+
+const searchInput = document.getElementById('inputPokemon')
+searchInput.addEventListener('keyup',(event) => {
+  const valueInput = event.target.value.toLowerCase()
+  const listFilter = searchData (valueInput,data.pokemon)
+  updatePokemonList(listFilter)
+})
 
 
 
