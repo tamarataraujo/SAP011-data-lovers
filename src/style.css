@@ -277,7 +277,7 @@ body.pagina-principal {
     background-color: rgb(219, 219, 26);
 }
 
-div-cards {
+.div-cards {
     background-color: aliceblue;
     width: 50%;
     width: 60%;
@@ -292,8 +292,43 @@ div-cards {
     margin-left: 20%;
   }
 
+  .flip-container {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
 
-  
+  .flipper{
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+    position: relative;
+    
+}
+
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
+	/* se quiser uma animação na vertical,
+	troque por rotateX(180deg)
+	*/
+}
+
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.back{
+	transform: rotateY(180deg);
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
   
 
 

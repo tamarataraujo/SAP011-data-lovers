@@ -1,4 +1,4 @@
-import {filtrarNomes} from './data.js';
+
 import data from './data/pokemon/pokemon.js';
 
 
@@ -14,24 +14,25 @@ const pkmCards = document.getElementById("pokemonList"); //pega o espaço onde o
 
 function updatePokemonList(filteredPokemons) {
   filteredPokemons.forEach((pokemon) => {
-    const card = document.createElement("div-cards");
     
-    card.innerHTML = `
-        
-            
-            <img src="${pokemon.img}" alt="Foto pokemon"></img>
-            <p> Nome: ${pokemon.name}  </p>
-            <p> Tipo: ${pokemon.type} </p>
-            
-            <div  class="cards-back"> 
-            <p class="pokemonRarity"> Raridade: ${pokemon.pokemonRarity} </p>
-            <p class="special-attack"> Resistencia: ${pokemon.resistant} </p>
-            
-            </div>
+    
+    pkmCards.innerHTML += `  
+            <div class="flip-container">        
+              <div class="flipper">
+                <div class="div-cards front">
+                  <img src="${pokemon.img}" alt="Pokemon image"></img>
+                  <p class="name"> Nome: ${pokemon.name}  </p>
+                  <p class="type"> Tipo: ${pokemon.type} </p>
+                </div>
 
+                <div  class="div-cards back"> 
+                <img src="/image/pokedex.png" alt="Pokedex image"></img>
+                  <p class="pokemonRarity"> Raridade: ${pokemon.pokemonRarity} </p>
+                  <p class="special-attack"> Resistencia: ${pokemon.resistant} </p>
+                </div>
+              </div>
+            </div>
             `;
-  
-    pkmCards.appendChild(card);
   });
 
 }
