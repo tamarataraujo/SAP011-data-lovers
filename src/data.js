@@ -8,14 +8,6 @@ function searchData(inputValue, list) {
 
 
 
-
-
-
-
-
-
-
-
 export {
   searchData,
 

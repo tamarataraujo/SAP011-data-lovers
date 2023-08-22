@@ -100,11 +100,11 @@ body.pagina-principal {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: rgba(92, 92, 199, 0.5);
+    background-color: rgba(92, 92, 199, 0.808);
     border: 2px solid #000;
     padding: 40px;
     border-radius: 5px;
-    color: white; 
+    color: rgb(0, 0, 0); 
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -128,23 +128,57 @@ body.pagina-principal {
 
 .extra{
     display: flex;
-    margin-top: 100px;
-    
-    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10%; /* Reduzido o espaçamento superior */
+  
 }
 
 
 .box {
     flex: 1; /* Cada caixa ocupará a mesma largura */
+    width: calc(50% - 20px); /* Ajustado o tamanho das caixas para ocuparem 50% do espaço */
+    max-width: 850px; /* Defina uma largura máxima para as caixas */
+    height: 400px; /* Altura automática para acomodar o conteúdo */
     border: 1px solid #000;
     padding: 10px;
-    background-color: rgba(92, 92, 199, 0.5);
+    background-color: rgba(92, 92, 199, 0.766);
     border: 2px solid #000;
-    padding: 40px;
+    padding: 20px;
     border-radius: 5px;
-    margin: 0 100px;
+    margin: 10px;
+
 }
 
+#summary-cartoon, #summary-game {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    overflow-wrap: break-word;  /* é mais indicado para quebrar palavras em tamanhos de tela menores.*/
+
+}
+
+.link-desenho, .link-jogo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+
+}
+
+/* Media query para ajuste em telas grandes */
+@media (max-width: 1200px) {
+    .box {
+      width: calc(33.33% - 20px); /* Distribuir em 2 colunas */
+      max-width: none;
+    }
+}
+
+/* Media query para ajuste em telas menores */
+@media (max-width: 768px) {
+  .box {
+    width: calc(100% - 20px);
+    max-width: none; /* Remover a largura máxima */
+  }
+}
 
     /* pagina do pokemon*/
 
