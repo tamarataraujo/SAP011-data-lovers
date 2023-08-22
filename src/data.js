@@ -1,7 +1,7 @@
 export const filterNames = (data, searchedName) => {
   return data.filter(
     (pokemon) =>
-      pokemon.name.toUpperCase().includes(searchedName.toUpperCase()) 
+      pokemon.name.toUpperCase().includes(searchedName.toUpperCase()) //permite que a pesquisa seja feita em letra maiuscula tbm
   );
 };
 
@@ -10,15 +10,15 @@ export const filterNames = (data, searchedName) => {
 // para filtrar de A-Z
 
 export const sortData = (data, sortBy, sortOrder) => {
-  const dataCopy = [...data];
+  const dataCopy = [...data]
   const sorted = dataCopy.sort(function (a, b) {
-    return a[sortBy].localeCompare(b[sortBy]);
-  });
+    return a[sortBy].localeCompare(b[sortBy])
+  })
   if (sortOrder === "a-z") {
-    return sorted;
+    return sorted
   }
-  if (sortOrder === "z-a") {
-    return sorted.reverse();
+  else {
+    return sorted.reverse()
   }
-};
+}
 
