@@ -1,5 +1,6 @@
-
+import {sortData, filterNames} from "./data.js";
 import data from './data/pokemon/pokemon.js';
+
 
 
 const pkmnDataList = data.pokemon; //pega o banco de dados
@@ -10,7 +11,8 @@ const pkmCards = document.getElementById("pokemonList"); //pega o espaço onde o
 // PARA PRINTAR O CONTEUDO 
 
 function updatePokemonList(filteredPokemons) {
-  filteredPokemons.map((pokemon) => {     // da para usar tanto o .map / forEach
+  pkmCards.innerHTML=''; 
+  filteredPokemons.forEach((pokemon) => {     // da para usar tanto o .map / forEach
     
     
     pkmCards.innerHTML += `  
@@ -37,11 +39,25 @@ updatePokemonList(pkmnDataList);
 
 
 
+// Filtrar por nome
+
+const searchPersonagem = document.getElementById("inputPokemon");
+searchPersonagem.addEventListener("input", (event) => {
+  const nomePersonagem = event.target.value;
+  const buscarPersonagem = filterNames(data.pokemon, nomePersonagem);
+  updatePokemonList(buscarPersonagem);
+});
 
 
+// filtrar de a-z
+const alfabeticOrder = document.getElementById("order-by");
+alfabeticOrder.addEventListener("change", function () {
+  const orderValue = alfabeticOrder.value;
+  updatePokemonList(sortData(data.pokemon, "name", orderValue));
+});
 
 
-
+  
 
 
 
