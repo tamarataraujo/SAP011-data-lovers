@@ -1,4 +1,4 @@
-import {searchData} from './data.js';
+
 import data from './data/pokemon/pokemon.js';
 
 
@@ -36,16 +36,6 @@ function updatePokemonList(filteredPokemons) {
 updatePokemonList(pkmnDataList);
 
 
-
-// Filtrar por nome
-
-const searchInput = document.getElementById('inputPokemon')
-searchInput.addEventListener('keyup', (event) => {
-  const valueInput = event.target.value.toLowerCase()
-  const searchFilter = searchData(valueInput, pkmnDataList)
-  updatePokemonList(searchFilter)
-
-})
 
 
 
