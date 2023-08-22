@@ -287,7 +287,6 @@ body.pagina-principal {
 
 }
 
-
 .front, .back{
     position: absolute;
     width: 100%;
@@ -310,7 +309,6 @@ body.pagina-principal {
     letter-spacing: 0.18em;
     margin-left: 8%;
     word-wrap: break-word;
-
 }
 
 

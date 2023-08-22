@@ -10,14 +10,14 @@ const pkmCards = document.getElementById("pokemonList"); //pega o espaço onde o
 // PARA PRINTAR O CONTEUDO 
 
 function updatePokemonList(filteredPokemons) {
-  filteredPokemons.forEach((pokemon) => {
+  filteredPokemons.map((pokemon) => {     // da para usar tanto o .map / forEach
     
     
     pkmCards.innerHTML += `  
             <div class="flip-container">        
               <div class="flipper">
                 <div class="div-cards front">
-                  <img src="${pokemon.img}" alt="Pokemon image"></img>
+                  <img class="pokemonImage" src="${pokemon.img}" alt="Pokemon image"></img>
                   <p class="name"> Nome: ${pokemon.name}  </p>
                   <p class="type"> Tipo: ${pokemon.type} </p>
                 </div>
@@ -40,12 +40,12 @@ updatePokemonList(pkmnDataList);
 // Filtrar por nome
 
 const searchInput = document.getElementById('inputPokemon')
-searchInput.addEventListener('keyup',(event) => {
+searchInput.addEventListener('keyup', (event) => {
   const valueInput = event.target.value.toLowerCase()
-  const listFilter = searchData (valueInput,data.pokemon)
-  updatePokemonList(listFilter)
-})
+  const searchFilter = searchData(valueInput, pkmnDataList)
+  updatePokemonList(searchFilter)
 
+})
 
 
 
