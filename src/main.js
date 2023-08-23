@@ -1,4 +1,4 @@
-import {sortData, filterNames} from "./data.js";
+import {sortData, filterNames, filterByType} from "./data.js";
 import data from './data/pokemon/pokemon.js';
 
 
@@ -59,4 +59,14 @@ alfabeticOrder.addEventListener("change", function () {
   const orderValue = alfabeticOrder.value;
   updatePokemonList(sortData(data.pokemon, "name", orderValue));
 
+});
+
+
+// filtrar por tipos
+
+const typeInput = document.getElementById("filter-types");
+typeInput.addEventListener("change", () => {
+  const selectedType = typeInput.value.toLowerCase();
+  const filteredPokemons = filterByType(selectedType, data.pokemon);
+  updatePokemonList(filteredPokemons);
 });
