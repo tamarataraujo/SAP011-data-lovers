@@ -20,13 +20,15 @@ function updatePokemonList(filteredPokemons) {
               <div class="flipper">
                 <div class="div-cards front">
                   <img class="pokemonImage" src="${pokemon.img}" alt="Pokemon image"></img>
-                  <p class="name"> Nome: ${pokemon.name}  </p>
-                  <p class="type"> Tipo: ${pokemon.type} </p>
+                <div class="name-type">
+                  <p class="name"> ${pokemon.name.toUpperCase()} </p>
+                  <p class="type"> Type: ${pokemon.type} </p>
+                </div>
                 </div>
 
                 <div  class="div-cards back">
-                  <p class="pokemonRarity"> Raridade: ${pokemon.pokemonRarity} </p>
-                  <p class="specialAttack"> Resistencia: ${pokemon.resistant} </p>
+                  <p class="pokemonRarity"> Rarity: ${pokemon.pokemonRarity} </p>
+                  <p class="specialAttack"> Resistance: ${pokemon.resistant} </p>
                 </div>
               </div>
             </div>
