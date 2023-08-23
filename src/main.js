@@ -8,25 +8,27 @@ const pkmnDataList = data.pokemon; //pega o banco de dados
 const pkmCards = document.getElementById("pokemonList"); //pega o espaço onde os cards serão cridos no
 
 
-// PARA PRINTAR O CONTEUDO 
+// PARA PRINTAR O CONTEUDO
 
 function updatePokemonList(filteredPokemons) {
-  pkmCards.innerHTML=''; 
+  pkmCards.innerHTML='';
   filteredPokemons.forEach((pokemon) => {     // da para usar tanto o .map / forEach
-    
-    
-    pkmCards.innerHTML += `  
-            <div class="flip-container">        
+
+
+    pkmCards.innerHTML += `
+            <div class="flip-container">
               <div class="flipper">
                 <div class="div-cards front">
                   <img class="pokemonImage" src="${pokemon.img}" alt="Pokemon image"></img>
-                  <p class="name"> Nome: ${pokemon.name}  </p>
-                  <p class="type"> Tipo: ${pokemon.type} </p>
+                <div class="name-type">
+                  <p class="name"> ${pokemon.name.toUpperCase()} </p>
+                  <p class="type"> Type: ${pokemon.type} </p>
+                </div>
                 </div>
 
-                <div  class="div-cards back"> 
-                  <p class="pokemonRarity"> Raridade: ${pokemon.pokemonRarity} </p>
-                  <p class="specialAttack"> Resistencia: ${pokemon.resistant} </p>
+                <div  class="div-cards back">
+                  <p class="pokemonRarity"> Rarity: ${pokemon.pokemonRarity} </p>
+                  <p class="specialAttack"> Resistance: ${pokemon.resistant} </p>
                 </div>
               </div>
             </div>
@@ -55,16 +57,3 @@ alfabeticOrder.addEventListener("change", function () {
   const orderValue = alfabeticOrder.value;
   updatePokemonList(sortData(data.pokemon, "name", orderValue));
 });
-
-
-  
-
-
-
-
-
-
-
-
-
-
