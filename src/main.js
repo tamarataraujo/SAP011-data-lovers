@@ -7,6 +7,7 @@ const pkmnDataList = data.pokemon; //pega o banco de dados
 
 const pkmCards = document.getElementById("pokemonList"); //pega o espaço onde os cards serão cridos no
 
+const htmlStatistic = document.getElementById("statistics");
 
 // PARA PRINTAR O CONTEUDO
 
@@ -69,4 +70,17 @@ typeInput.addEventListener("change", () => {
   const selectedType = typeInput.value.toLowerCase();
   const filteredPokemons = filterByType(selectedType, data.pokemon);
   updatePokemonList(filteredPokemons);
+
+  // estatistica
+  const pokemonCount = filteredPokemons.length;
+  const typePercentage = (pokemonCount / data.pokemon.length) * 100;
+  htmlStatistic.textContent =
+    `There are ${pokemonCount} Pokémon of the selected Type, which is equivalent to ${typePercentage.toFixed(
+      2
+    )}% of all the 251 Pokémon.`
 });
+
+
+
+
+
