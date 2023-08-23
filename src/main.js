@@ -27,8 +27,10 @@ function updatePokemonList(filteredPokemons) {
                 </div>
 
                 <div  class="div-cards back">
-                  <p class="pokemonRarity"> Rarity: ${pokemon.pokemonRarity} </p>
-                  <p class="specialAttack"> Resistance: ${pokemon.resistant} </p>
+                <div class="rarity-resistance">
+                <p class="pokemonRarity"> Rarity: ${pokemon.pokemonRarity} </p>
+                  <p class="resistance"> Resistance: ${pokemon.resistant} </p>
+                </div>
                 </div>
               </div>
             </div>
@@ -56,5 +58,5 @@ const alfabeticOrder = document.getElementById("order-by");
 alfabeticOrder.addEventListener("change", function () {
   const orderValue = alfabeticOrder.value;
   updatePokemonList(sortData(data.pokemon, "name", orderValue));
-  
+
 });

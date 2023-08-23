@@ -268,12 +268,12 @@ body.pagina-principal {
     display: flex;
     background-color:  rgba(8, 9, 10, 0.3);
     color: yellow;
-    width: 43%;
     margin-left:33.33%;
     justify-content: center;
     display: inline-block;
     padding: 8px;
     box-shadow: 3px 3px 8px black;
+    margin-bottom: 90px;
 
 }
 
@@ -332,6 +332,7 @@ body.pagina-principal {
 
 .front, .back{
 	position: absolute;
+    box-shadow: 8px 8px 10px black;
   font-weight: 700;
   backface-visibility: hidden;
   width: 100%;
@@ -339,14 +340,17 @@ body.pagina-principal {
   color: yellow;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size:15px;
+  font-size: 15px;
 }
 
 .name-type{
-    background-color: rgb(248, 248, 23);
+    background-color: rgba(146, 234, 46, 0.612);
     color: black;
-    padding: px;
-    border-radius: 50px;
+    box-shadow: 3px 3px 8px black;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2% 10%;
+
 }
 
 .front{
@@ -364,17 +368,23 @@ body.pagina-principal {
 }
 .pokemonRarity{
 
-    margin-top: 30%;
-    letter-spacing: 0.2em;
     margin-left: 8%;
     margin-right: 8%;
+    ;
 }
 
-.specialAttack{
+.resistance{
 
-    margin-top: 30%;
     margin-right: 8%;
-    letter-spacing: 0.18em;
     margin-left: 8%;
+    letter-spacing: 0.08em;
     word-wrap: break-word;
+}
+
+.rarity-resistance{
+    background-color: purple;
+    box-shadow: 3px 3px 8px black;
+    padding: 10px;
+    margin: 3% 10%;
+    border-radius: 5px;
 }
