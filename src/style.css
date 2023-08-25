@@ -13,22 +13,27 @@
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 32px;
 color: yellow;
-text-shadow: 5px 5px 5px blue;
+text-shadow: 5px 5px 5px rgb(64, 64, 228);
+margin-left: 3%;
 }
 
 #btn-access{
     height: 32px;
     width: 70px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 20px;
     color: rgb(247, 247, 15);
     background-color: rgb(88, 88, 199);
-    margin-left: 15%;
+    margin-left: 12%;
+    border:rgb(91, 91, 224);
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 1px blue;
   }
 
   #btn-access:hover{
     background-color:  rgb(247, 247, 15);
-    color:rgb(88, 88, 199) ;
+    color:rgb(88, 88, 199);
   }
 
 
