@@ -1,4 +1,4 @@
-import {sortData, filterNames, filterByType} from "./data.js";
+import {sortData, filterNames, filterByType, computerType} from "./data.js";
 import data from './data/pokemon/pokemon.js';
 
 
@@ -51,6 +51,8 @@ searchPersonagem.addEventListener("input", (event) => {
   const nomePersonagem = event.target.value;
   const buscarPersonagem = filterNames(data.pokemon, nomePersonagem);
   updatePokemonList(buscarPersonagem);
+  htmlStatistic.innerHTML = `Here you are gonna find 251 Pokemons`
+
 });
 
 
@@ -59,7 +61,7 @@ const alfabeticOrder = document.getElementById("order-by");
 alfabeticOrder.addEventListener("change", function () {
   const orderValue = alfabeticOrder.value;
   updatePokemonList(sortData(data.pokemon, "name", orderValue));
-
+  htmlStatistic.innerHTML = `Here you are gonna find 251 Pokemons`
 });
 
 
@@ -69,17 +71,17 @@ const typeInput = document.getElementById("filter-types");
 typeInput.addEventListener("change", () => {
   const selectedType = typeInput.value.toLowerCase();
   const filteredPokemons = filterByType(selectedType, data.pokemon);
-  updatePokemonList(filteredPokemons);
+  updatePokemonList(filteredPokemons)
 
   // estatistica
-  const pokemonCount = filteredPokemons.length;
-  const typePercentage = (pokemonCount / data.pokemon.length) * 100;
-  htmlStatistic.textContent =
-    `There are ${pokemonCount} Pokémon of the selected Type, which is equivalent to ${typePercentage.toFixed(
-      2
-    )}% of all the 251 Pokémon.`
-});
+  const typePorcentage = computerType(filteredPokemons, data.pokemon.length);
+  htmlStatistic.innerHTML = `
+    There are ${filteredPokemons.length} Pokémon of the selected Type, which is equivalent to ${typePorcentage}%
+    of all the 251 Pokémon.
+  `;
 
+
+})
 
 
 

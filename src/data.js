@@ -31,3 +31,7 @@ export const filterByType = (typeInput, list) => {
   })
   return filteredPokemons;
 }
+
+export function computerType (filteredPokemons, totalPokemons) {
+  return ((filteredPokemons.length / totalPokemons)*100).toFixed(2)
+}
