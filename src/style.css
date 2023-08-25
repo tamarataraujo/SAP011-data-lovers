@@ -12,7 +12,8 @@
 .boas-vindas{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 32px;
-color: antiquewhite;
+color: yellow;
+text-shadow: 5px 5px 5px blue;
 }
 
 #btn-access{
@@ -20,8 +21,16 @@ color: antiquewhite;
     width: 70px;
     border-radius: 5px;
     font-size: 18px;
-    align-content: center;
-}
+    color: rgb(247, 247, 15);
+    background-color: rgb(88, 88, 199);
+    margin-left: 15%;
+  }
+
+  #btn-access:hover{
+    background-color:  rgb(247, 247, 15);
+    color:rgb(88, 88, 199) ;
+  }
+
 
 @media (max-width: 1000px){
     .pagina-inicial{
