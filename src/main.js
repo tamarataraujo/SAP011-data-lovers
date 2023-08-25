@@ -60,8 +60,8 @@ alfabeticOrder.addEventListener("change", function () {
   const orderValue = alfabeticOrder.value;
   updatePokemonList(sortData(data.pokemon, "name", orderValue));
 
-});
 
+});
 
 // filtrar por tipos
 
