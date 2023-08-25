@@ -15,15 +15,12 @@ font-size: 32px;
 color: antiquewhite;
 }
 
-
 #btn-access{
     height: 32px;
     width: 70px;
     border-radius: 5px;
     font-size: 18px;
     align-content: center;
-
-
 }
 
 @media (max-width: 1000px){
