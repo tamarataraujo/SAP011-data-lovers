@@ -23,6 +23,7 @@ export const sortData = (data, sortBy, sortOrder) => {
 }
 
 
+
 //funcao para filtrar por tipo
 
 export const filterByType = (typeInput, list) => {
