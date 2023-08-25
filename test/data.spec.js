@@ -52,7 +52,7 @@ describe('aggregate calculation', () => {
 
   it('returns percentage of filtered array', () => {
     const filterByType = [bulbasaur]
-    expect(computerType(filterByType, pokemonTest)).toBe('20.00');
+    expect(computerType(filterByType, 10)).toBe('10.00');
   });
 });
 
