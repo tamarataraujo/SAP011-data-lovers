@@ -57,19 +57,18 @@
     }
 }
 
-
-
-
-
 /* Estilos para a pagina Home */
 
 body.pagina-principal {
-    background-color: rgb(49, 146, 232);
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url('image/home-image.png');
     background-size: cover;
     background-attachment:fixed;
+
+}
+.div-logo img{
+    max-width: 60%;
+    min-width: 20%;
+    
 }
 
 
@@ -103,27 +102,10 @@ body.pagina-principal {
 }
 
 
-/* estilo da pagina home*/
-
 .hello-gamer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
-    /* h1{
-      font-size: 35px;
-      color: #181831ea;
-      text-shadow: 3px 3px 3px #f3f3efb2;
-      background-color: #e4e2ec9c;
-      display: flex;
-      width: 30%;
-      height: 50%;
-      justify-content: center;
-      margin: auto;
-      margin-top: 30px;
-      padding: 10px;
-      border-radius: 5px;
-      border: solid #00000085;
-} */
 
 .introduction {
     /* margin-top: 60px; */
@@ -154,9 +136,12 @@ body.pagina-principal {
     font-size: 18px;
 }
 
+@media screen and (max-width: 1024px){
 
 
 
+
+}
 
 /* estilo pagina extra*/
 
