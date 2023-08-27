@@ -24,7 +24,7 @@ O objetivo deste projeto proporcionar o auto aprendizado, seguido de aplicaçõe
 
 ## 2. Funcionalidade
 
-Neste projeto você ** encontrará  _página web_ para visualizar um _conjunto (set) de dados_** que se adeque às necessidades do usuário.
+Neste projeto você ** encontrará  página web para visualizar um conjunto (set) de dados** que se adeque às necessidades do usuário.
 
 * Visualização de Pokémons em cards: Os usuários podem ver os Pokémons em cards intuitivos e atraentes, exibindo informações importantes, como nome e tipo.
 
@@ -37,12 +37,34 @@ O PokeHub foi criado para que os usuários possam interagir com os cartões que 
 
 
   ## 4. Histórias de usuário 🙋‍♀️🙋‍♀️
+  O projeto foi construido para fãs de Pokémon, tanto de jogos como do desenho, que quer ter mais informações sobre os personagens.
+
+  Ao entrar no site, o usuário visualizará uma página inicial com um botão **start**, em seguida, será direcionado a página **home** onde encontrará uma breve explicação do site. Na página Home, o usuário encontrará um menu com 3 opções de navegação, sendo: **Home, Pokemons e Extra**. Na página Pokemons, o usuáriko encontrará todos os Pokemóns, e ao passar o mouse por cima do card com a imagem, terá as informações de: raridade e resistência. Há também uma opção para ordenar os Pokemóns por ordem Alfabética, um campo para a busca especifica pelo nome e um filtro para que seja possível filtrar o tipo do personagem. Na página extra, o usuario encontrará links que que o redirecionará para o jogo oficial **Pokemon Go** e o desenho com todas as temporadas.
+
+O site foi pensando para ser utilizado quando fãs do desenho quiserem ter mais informações do personagem, ou, quando jogadores de Pokémon quiserem saber as características dos personagens para escolher de acordo com seu objetivo no jogo (atacar, defender, dar assistência);
+
+
+  ![historia de usuaruio](./src/image/HU.png)
+
 
   ## 5. Interface Web e Mobile
 
+ Protótipo de alta fidelidade feito no MarvelApp
+  [Visite o Protótipo]( https://marvelapp.com/prototype/19ij1bf9/screen/92444608)
+ 
+  ![protótipo](./src/image/protótipo_.png)
+
+  Na imagem abaixo o protótipo mostra como seria a página com as opções dos cards com a implementação do filtro de ordenação de A-Z e Z-A.
+
+   ![protótipo card pokemon](./src/image/protótipo_filtro.png)
+
+
   ## 6.  Testes de usabilidade
+  
 
   ## 7.  Tecnologias utilizadas
+
+
 
   ## 8. Desenvolvedoras 
 
