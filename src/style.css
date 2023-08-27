@@ -107,21 +107,23 @@
 
 body.pagina-principal {
 
-  background-image: url('image/home-image.png');
-  background-size: cover;
-  background-attachment:fixed;
-  margin: 0;
+    background-image: url('image/home-image.png');
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;    
+    
 }
 
 .hello-gamer{
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    display: flex;
 }
 
 main{
-
-  margin: 0px;
+    margin: 0px;
+    height: 100vh;
 }
 
 .introduction {
@@ -142,7 +144,6 @@ main{
 }
 
 .about-pokehub{
-
     font-size: 27px;
     margin-top: 5px;
 }
@@ -155,39 +156,35 @@ main{
 @media screen and (max-width: 1024px){
 
 }
-
-
-
 /* Página extra*/
-
-body.main-extra{
+.main-extra{
 
     background-image: url('image/extra-image.jpg');
     background-size: cover;
     margin: 0;
     background-attachment:fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 
 .extra{
-
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .box {
 
     flex: 1; /* Cada caixa ocupará a mesma largura */
-    /* width: calc(25% - 20px); Ajustado o tamanho das caixas para ocuparem 50% do espaço */
     border: 1px solid #000;
     padding: 10px;
     background-color: rgba(92, 92, 199, 0.671);
     border: 2px solid #00000033;
-    padding: 20px;
     border-radius: 5px;
-    margin: 100px;
+    margin: 47px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 1%;
 }
 
 #summary-cartoon, #summary-game {
@@ -196,6 +193,7 @@ body.main-extra{
     font-size: 1.2em;
     /* overflow-wrap: break-word;  é mais indicado para quebrar palavras em tamanhos de tela menores. */
     text-align: center;
+    box-sizing: border-box;
 }
 
 .link-desenho, .link-jogo{
@@ -204,23 +202,24 @@ body.main-extra{
     color: #1606fc;
 }
 
-/* Media query para ajuste em telas grandes */
-@media (max-width: 1200px) {
+
+/* Media para telas grandes */
+@media (min-width: 1024px) {
+    .extra {
+        flex-direction: row;
+    }
     .box {
-      width: calc(33.33% - 20px); /* Distribuir em 2 colunas */
-      max-width: none;
+        flex: 0.5; /* Ocupará metade da largura em telas maiores */
     }
 }
-
-/* Media query para ajuste em telas menores */
-@media (max-width: 768px) {
-  .box {
-    width: calc(100% - 20px);
-    max-width: none; /* Remover a largura máxima */
-  }
+@media (max-width: 390px) {
+    .extra {
+        flex-direction: column;
+    }
+    .box {
+        margin: 10px;
+    }
 }
-
-
 
   /* Página Pokemons */
 
