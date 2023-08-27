@@ -67,8 +67,8 @@ describe('search name', () => {
     const valueInput1 = "bu";
     const valueInput2 = "iv";
 
-    expect(filterNames(valueInput1, pokemonTest)).toEqual([bulbasaur]);
-    expect(filterNames(valueInput2, pokemonTest)).toEqual([ivysaur]);
+    expect(filterNames(pokemonTest,valueInput1)).toEqual([bulbasaur]);
+    expect(filterNames(pokemonTest, valueInput2)).toEqual([ivysaur]);
   });
 });
 
