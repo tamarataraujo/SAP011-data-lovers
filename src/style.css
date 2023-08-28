@@ -41,7 +41,7 @@
 
     background-color:  rgb(247, 247, 15);
     color:rgb(88, 88, 199);
-  }
+}
 
 /* responsive */
 
@@ -49,8 +49,9 @@
 
     .div-logo-inicial{
         position:relative;
-        left: 30px;
+        left: 30px;  
     }
+
     .pagina-inicial{
         background-size: cover;
         background-position: center center;
@@ -60,16 +61,33 @@
         font-size: 3em;
     }
 }
+.footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    border-radius: 30px;
 
+
+
+}
+
+@media (max-width:475px){
+
+    .footer {
+}
+
+}
 /* header e nav de todas */
 
-.div-logo img{
+.div-logo img {
 
     max-width: 50%;
     min-width: 20%;
     display: flex;
     padding: 10px;
 }
+
 
 .cabecalho{
 
@@ -99,10 +117,24 @@
 }
 
 .header-nav a:hover{
-
     background-color: white;
 }
 
+@media (max-width: 475px){
+    .div-logo img {
+        max-width: 95px;
+    }
+    .header-nav ul {
+        margin-right:30px;
+        padding-inline-start:10px;
+        font-size: 12px;
+        gap:5px
+    }
+
+    .footer{
+        margin-right: 0;
+    }
+}
 /* Página Home */
 
 body.pagina-principal {
@@ -157,6 +189,8 @@ main{
 
 }
 /* Página extra*/
+
+
 .main-extra{
 
     background-image: url('image/extra-image.jpg');
@@ -166,8 +200,19 @@ main{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+
 }
 
+main{
+    height: 100%;
+}
+
+@media (max-width:475px){
+    main {
+        margin: 20px 20px;
+    }
+    }
 
 .extra{
     display: flex;
@@ -306,7 +351,12 @@ body.main-pokemon{
     color: #000;
 }
 
+@media (max-width: 475px) {
+    .name-button{
+        
+    }
 
+}
 
 /*paragrafo da estatistica */
 #statistics{
