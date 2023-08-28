@@ -101,7 +101,7 @@ describe('Sort character list', () => {
     const valueAZ = "a-z";
     const valueZA = "z-a";
 
-    expect(sortData(valueAZ, pokemonTest)).toEqual([bulbasaur, charmander, charmeleon, ivysaur, weedle]);
-    expect(sortData(valueZA, pokemonTest)).toEqual([weedle,ivysaur,charmeleon,charmander,bulbasaur]);
+    expect(sortData(pokemonTest, "name", valueAZ)).toEqual([bulbasaur, charmander, charmeleon, ivysaur, weedle]);
+    expect(sortData(pokemonTest, "name", valueZA)).toEqual([weedle,ivysaur,charmeleon,charmander,bulbasaur]);
   });
 });
