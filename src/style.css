@@ -41,11 +41,11 @@
 
     background-color:  rgb(247, 247, 15);
     color:rgb(88, 88, 199);
-}
+  }
 
 /* responsive */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 475px){
 
     .div-logo-inicial{
         position:relative;
@@ -58,7 +58,7 @@
     }
     .boas-vindas{
         word-wrap: break-word;
-        font-size: 3em;
+        font-size: 1em;
     }
 }
 .footer{
@@ -67,22 +67,16 @@
     text-align: center;
     width: 100%;
     border-radius: 30px;
-
-
-
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
 }
 
-@media (max-width:475px){
-
-    .footer {
-}
-
-}
 /* header e nav de todas */
 
 .div-logo img {
 
-    max-width: 50%;
+    max-width: 70%;
     min-width: 20%;
     display: flex;
     padding: 10px;
@@ -102,7 +96,7 @@
 .header-nav ul{
     display: flex;
     list-style-type: none;
-    font-size: 18px;
+    font-size: 28px;
     gap: 10px;
     margin-right: 30px;
 }
@@ -124,13 +118,18 @@
     .div-logo img {
         max-width: 95px;
     }
+}
+
+@media (max-width: 475px){
     .header-nav ul {
         margin-right:30px;
         padding-inline-start:10px;
         font-size: 12px;
         gap:5px
     }
+}
 
+@media (max-width: 475px){
     .footer{
         margin-right: 0;
     }
@@ -200,19 +199,8 @@ main{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    position: relative;
-
 }
 
-main{
-    height: 100%;
-}
-
-@media (max-width:475px){
-    main {
-        margin: 20px 20px;
-    }
-    }
 
 .extra{
     display: flex;
@@ -351,12 +339,7 @@ body.main-pokemon{
     color: #000;
 }
 
-@media (max-width: 475px) {
-    .name-button{
-        
-    }
 
-}
 
 /*paragrafo da estatistica */
 #statistics{
