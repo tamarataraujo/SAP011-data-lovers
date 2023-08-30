@@ -63,8 +63,25 @@ O site foi pensando para ser utilizado quando fãs do desenho quiserem ter mais 
   
 
   ## 7.  Tecnologias utilizadas
+  ![Java Script](/src/image/iconJS.png)
+  ![CSS](/src/image/CSSicon.png)
+  ![HTML](/src/image/HTMLicon.png)
 
 
 
   ## 8. Desenvolvedoras 
+
+
+Rafaela Guedes 
+
+<a href="https://github.com/RafaelaMiliano">
+  <img src="https://github.com/RafaelaMiliano.png" alt="Minha Foto de Perfil" width="70" height="70">
+</a>
+
+Tamara Araujo 
+
+<a href="https://github.com/tamarataraujo">
+  <img src="https://github.com/tamarataraujo.png" alt="Minha Foto de Perfil" width="70" height="70">
+</a>
+
 
