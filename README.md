@@ -70,18 +70,15 @@ O site foi pensando para ser utilizado quando fãs do desenho quiserem ter mais 
 
 
   ## 8. Desenvolvedoras 
+<div style="text-align: center;">
 
-
-Rafaela Guedes 
+ #### Rafaela Guedes      |     | Tamara Araujo 
 
 <a href="https://github.com/RafaelaMiliano">
-  <img src="https://github.com/RafaelaMiliano.png" alt="Minha Foto de Perfil" width="70" height="70">
+  <img src="https://github.com/RafaelaMiliano.png" alt="Minha Foto de Perfil" style="border-radius: 50%; width="70" height="70">
+</a>   <a href="https://github.com/tamarataraujo">
+  <img src="https://github.com/tamarataraujo.png" alt="Minha Foto de Perfil" style="border-radius: 50%; width="70" height="70">
 </a>
-
-Tamara Araujo 
-
-<a href="https://github.com/tamarataraujo">
-  <img src="https://github.com/tamarataraujo.png" alt="Minha Foto de Perfil" width="70" height="70">
-</a>
+</div>
 
 
