@@ -20,11 +20,11 @@ Este projeto foi elaborado como parte do bootcamp da Laboratoria.
 
 O objetivo deste projeto proporcionar o auto aprendizado, seguido de aplicações de competências técnicas, abordando HTML, CSS e JavaScript, bem como aprimorar a compreensão do universo do desenvolvimento web.
 
-![pokemon-data-to-ui]() * Colocar LOGO
+![pokemon-data-to-ui](./src/image/logo.png) 
 
 ## 2. Funcionalidade
 
-Neste projeto você ** encontrará  página web para visualizar um conjunto (set) de dados** que se adeque às necessidades do usuário.
+Neste projeto você encontrará  página web para visualizar um conjunto (set) de dados que se adeque às necessidades do usuário.
 
 * Visualização de Pokémons em cards: Os usuários podem ver os Pokémons em cards intuitivos e atraentes, exibindo informações importantes, como nome e tipo.
 
@@ -49,7 +49,7 @@ O site foi pensando para ser utilizado quando fãs do desenho quiserem ter mais 
 
   ## 5. Interface Web e Mobile
 
- Protótipo de alta fidelidade feito no MarvelApp
+ ### Protótipo de alta fidelidade feito no MarvelApp
   [Visite o Protótipo]( https://marvelapp.com/prototype/19ij1bf9/screen/92444608)
  
   ![protótipo](./src/image/protótipo_.png)
@@ -58,6 +58,7 @@ O site foi pensando para ser utilizado quando fãs do desenho quiserem ter mais 
 
    ![protótipo card pokemon](./src/image/protótipo_filtro.png)
 
+### Projeto Final
 
   ## 6.  Testes de usabilidade
   

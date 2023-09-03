@@ -1,20 +1,17 @@
 /* Estilos para a primeira página */
 
 .pagina-inicial {
-
     background-image: url('image/img-inicializar.jpg');
     background-size: cover;
     background-attachment:fixed;
 }
 
 .div-logo-inicial img {
-
     max-width: 71%;
     min-width: 20%;
 }
 
-.boas-vindas{
-
+.boas-vindas {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 32px;
     color: yellow;
@@ -23,14 +20,12 @@
 }
 
 #btn-access{
-
-    height: 35px;
-    width: 20%;
+    height: 54px;
+    width: 17%;
     border-radius: 5px;
     font-size: 18px;
     color: rgb(247, 247, 15);
     background-color: rgb(88, 88, 199);
-    margin-left: 12%;
     border:rgb(91, 91, 224);
     letter-spacing: 1px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -38,7 +33,6 @@
 }
 
 #btn-access:hover{
-
     background-color:  rgb(247, 247, 15);
     color:rgb(88, 88, 199);
 }
@@ -60,13 +54,14 @@
         word-wrap: break-word;
         font-size: 1em;
     }
+    #btn-access{
+        margin-left: 15%;
+    }
 }
-
 
 /* header e nav de todas */
 
 .div-logo img {
-
     max-width: 70%;
     min-width: 20%;
     display: flex;
@@ -75,7 +70,6 @@
 
 
 .cabecalho{
-
     display: flex;
     justify-content: space-between;
     padding: 5px;
@@ -130,7 +124,6 @@
 /* Página Home */
 
 body.pagina-principal {
-
     background-image: url('image/home-image.png');
     background-size: cover;
     background-attachment:fixed;
@@ -141,7 +134,6 @@ body.pagina-principal {
 }
 
 .hello-gamer{
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     display: flex;
@@ -149,7 +141,6 @@ body.pagina-principal {
 }
 
 main{
-
     margin: 0px;
     height: 100%;
     width: 100%;
@@ -157,7 +148,6 @@ main{
 }
 
 .introduction {
-
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -179,7 +169,6 @@ main{
 }
 
 .summary {
-
     font-size: 18px;
 }
 
@@ -195,7 +184,6 @@ main{
 
 
 .main-extra{
-
     background-image: url('image/extra-image.jpg');
     background-size: cover;
     margin: 0;
@@ -213,7 +201,6 @@ main{
     justify-content: space-between;
 }
 .box {
-
     flex: 1; /* Cada caixa ocupará a mesma largura */
     border: 1px solid #000;
     padding: 10px;
@@ -226,7 +213,6 @@ main{
 }
 
 #summary-cartoon, #summary-game {
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.2em;
     text-align: center;
@@ -234,7 +220,6 @@ main{
 }
 
 .link-desenho, .link-jogo{
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #1606fc;
 }
@@ -265,7 +250,6 @@ main{
   /* Página Pokemons */
 
 body.main-pokemon{
-
     background-image: url('image/fundoprinpal.png');
     background-size: cover;
     background-attachment:fixed;
@@ -273,17 +257,15 @@ body.main-pokemon{
     min-height: 100%;
     width: 100%;
 
-    }
+}
 
     main{
-
         position: relative;
         min-height: 100vh;
         width:100%;
-    }
+}
 
 .name-button{
-
     display: flex;
     justify-content:right;
     align-items: center;
@@ -296,7 +278,6 @@ body.main-pokemon{
 
 
 #search-div{
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
     box-shadow: 8px 8px 10px;
@@ -305,13 +286,11 @@ body.main-pokemon{
 }
 
 #inputPokemon::placeholder{
-
     color: #ffffff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
 #inputPokemon{
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   font-size: 18px;
     padding:20px;
     background-color:rgb(57, 118, 209);
@@ -325,21 +304,19 @@ body.main-pokemon{
 
 @media screen and (max-width: 768px) {
 #inputPokemon {
-      max-width: 120px;
-      font-size: 12px;
-      padding: 15px 5px;
+        max-width: 120px;
+        font-size: 12px;
+        padding: 15px 5px;
 
         }
 }
 
 #inputPokemon:hover{
-
     background-color: rgba(255, 255, 0, 0.812);
     color: #000;
 }
 
 #order-by{
-
     display: flex;
     color: #ffffff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -353,23 +330,21 @@ body.main-pokemon{
 }
 
 @media screen and (max-width: 768px) {
-  #order-by {
+    #order-by {
     font-size: 12px;
     padding: 15px 5px;
     width: 100px;
 
-  }
+}
 }
 
 
 #order-by:hover{
-
     background-color: rgba(255, 255, 0, 0.812);
     color: #000;
 }
 
 #filter-types{
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #ffffff;
     font-size: 16px;
@@ -382,16 +357,15 @@ body.main-pokemon{
 }
 
 @media screen and (max-width: 768px) {
-  #filter-types {
+    #filter-types {
     font-size: 12px;
     padding: 15px 5px;
     width: 100px;
 
-  }
+    }
 }
 
 #filter-types:hover{
-
     background-color: yellow;
     color: #000;
 }
@@ -400,7 +374,6 @@ body.main-pokemon{
 
 /*paragrafo da estatistica */
 #statistics{
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.1em;
     text-align: center;
@@ -418,23 +391,22 @@ body.main-pokemon{
 }
 
 @media screen and (max-width: 768px) {
-  #statistics {
-      width: 95%;
-      font-size: 14px;
-      margin-left: 1px;
-      margin-right: 1px;
-  }
+    #statistics {
+        width: 95%;
+        font-size: 14px;
+         margin-left: 1px;
+        margin-right: 1px;
+    }
 }
 
 .display-calc-card{
-      margin-bottom: 1px;
+    margin-bottom: 1px;
 
 }
 
 /* CARDS ABAIXO */
 
 #pokemonList {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -452,11 +424,9 @@ body.main-pokemon{
 #pokemonList {
     width: 1024px;
 }
-
 }
 
 .div-cards {
-
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
@@ -469,8 +439,7 @@ body.main-pokemon{
 }
 
 
-  .flip-container {
-
+.flip-container {
     width: 280px;
     height: 310px;
     perspective: 1000px;
@@ -485,7 +454,6 @@ body.main-pokemon{
 }
 
 .flipper{
-
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
@@ -497,7 +465,6 @@ body.main-pokemon{
 }
 
 .front, .back{
-
     position: absolute;
     box-shadow: 8px 8px 10px black;
     font-weight: 700;
@@ -512,7 +479,6 @@ body.main-pokemon{
 }
 
 .name-type{
-
     background-color: rgba(146, 234, 46, 0.612);
     color: black;
     box-shadow: 3px 3px 8px black;
@@ -521,15 +487,12 @@ body.main-pokemon{
     margin: 2% 10%;
 }
 
-
 .front{
-
     background-color: (92, 92, 199, 0.9);
 }
 
 .back{
-
-  	transform: rotateY(180deg);
+    transform: rotateY(180deg);
     gap: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
@@ -562,46 +525,50 @@ body.main-pokemon{
 }
 
 @media screen and (max-width: 475px) {
-  .div-cards {
-      width: 200px;
-      height: 260px;
-  }
-  .flip-container {
-      width: 200px;
-      height: 260px;
-  }
-  .flipper{
-      width: 200px;
-      height: 260px;
-  }
+    .div-cards {
+        width: 200px;
+        height: 260px;
+}
+    .flip-container {
+        width: 200px;
+        height: 260px;
+}
+    .flipper{
+        width: 200px;
+        height: 260px;
+}
 .front, .back {
 font-size: 12px;
 }
 
-  }
-
-
+}
 
 
 /* Footer */
 
 .footer {
-    background-color: #333;
+    background-image: radial-gradient(circle, #ffcc00b7, #ff99001e);
     color: #fff;
     text-align: center;
     padding: 5px 0;
     width: 100%;
     position: absolute;
     bottom: 0;
-    height: 2.5rem;
+    height: 2.3rem;
 
+}
+    /* Estilo para o texto "Developed by" */
+.footer p {
+    margin: 0;
+    letter-spacing: 0.11em;
+    color: #000; 
 }
 
 
 /* Estilos responsivos */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 425px) {
     .footer {
-        max-width: 110%;
+        max-width: 100%;
         font-size: 14px;
     }
 }
