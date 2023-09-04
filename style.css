@@ -1,0 +1,574 @@
+/* Estilos para a primeira página */
+
+.pagina-inicial {
+    background-image: url('image/img-inicializar.jpg');
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.div-logo-inicial img {
+    max-width: 71%;
+    min-width: 20%;
+}
+
+.boas-vindas {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: yellow;
+    text-shadow: 5px 5px 5px rgb(64, 64, 228);
+    margin-left: 3%;
+}
+
+#btn-access{
+    height: 54px;
+    width: 17%;
+    border-radius: 5px;
+    font-size: 18px;
+    color: rgb(247, 247, 15);
+    background-color: rgb(88, 88, 199);
+    border:rgb(91, 91, 224);
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgb(62, 62, 214);
+}
+
+#btn-access:hover{
+    background-color:  rgb(247, 247, 15);
+    color:rgb(88, 88, 199);
+}
+
+/* responsive */
+
+@media screen and (max-width: 475px){
+
+    .div-logo-inicial{
+        position:relative;
+        left: 30px;
+    }
+
+    .pagina-inicial{
+        background-size: cover;
+        background-position: center center;
+    }
+    .boas-vindas{
+        word-wrap: break-word;
+        font-size: 1em;
+    }
+    #btn-access{
+        margin-left: 15%;
+    }
+}
+
+/* header e nav de todas */
+
+.div-logo img {
+    max-width: 70%;
+    min-width: 20%;
+    display: flex;
+    padding: 10px;
+}
+
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgba(8, 9, 10, 0.3);
+    align-items: center;
+    margin-bottom: 5%;
+    width:100%;
+}
+
+.header-nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 28px;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+.header-nav a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color:black;
+    background-color: #f2da05;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-nav a:hover{
+    background-color: white;
+}
+
+@media (max-width: 475px){
+    .div-logo img {
+        max-width: 95px;
+    }
+}
+
+@media (max-width: 475px){
+    .header-nav ul {
+        margin-right:30px;
+        padding-inline-start:10px;
+        font-size: 12px;
+        gap:5px
+    }
+}
+
+@media (max-width: 475px){
+    .footer{
+        margin-right: 0;
+    }
+}
+
+/* Página Home */
+
+body.pagina-principal {
+    background-image: url('image/home-image.png');
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    width:100%;
+}
+
+.hello-gamer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    padding-bottom: 2.5rem;
+}
+
+main{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #c1c2f7d8;
+    padding: 20px;
+    border-radius: 5px;
+    color: #1b1919;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.about-pokehub{
+    font-size: 27px;
+    margin-top: 5px;
+}
+
+.summary {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 475px){
+    main{
+        height: 100%;
+    }
+}
+
+
+
+/* Página extra*/
+
+
+.main-extra{
+    background-image: url('image/extra-image.jpg');
+    background-size: cover;
+    margin: 0;
+    background-attachment:fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+.extra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box {
+    flex: 1; /* Cada caixa ocupará a mesma largura */
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: #c1c2f7d8;
+    border: 2px solid #c1c2f7d8;
+    border-radius: 5px;
+    margin: 47px;
+    text-align: center;
+    margin-top: 1%;
+}
+
+#summary-cartoon, #summary-game {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.link-desenho, .link-jogo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #1606fc;
+}
+
+
+/* Media para telas grandes */
+@media (min-width: 1024px) {
+    .extra {
+        flex-direction: row;
+    }
+    .box {
+        flex: 0.5; /* Ocupará metade da largura em telas maiores */
+    }
+}
+@media (max-width: 390px) {
+    .extra {
+        flex-direction: column;
+        max-width: 80%;
+        justify-content: center;
+        margin: auto;
+        font-size: 14px
+    }
+    .box {
+        margin: 10px;
+    }
+}
+
+  /* Página Pokemons */
+
+body.main-pokemon{
+    background-image: url('image/fundoprinpal.png');
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    min-height: 100%;
+    width: 100%;
+
+}
+
+    main{
+        position: relative;
+        min-height: 100vh;
+        width:100%;
+}
+
+.name-button{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    padding: 5px;
+    margin: 50px auto 20px 0;
+    width: 90%;
+    display: flex;
+    gap: 8px;
+}
+
+
+#search-div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    box-shadow: 8px 8px 10px;
+    border-radius: 5px;
+    border: rgb(168, 21, 161) ;
+}
+
+#inputPokemon::placeholder{
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+#inputPokemon{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   font-size: 18px;
+    padding:20px;
+    background-color:rgb(57, 118, 209);
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    border: hidden;
+    color: #fff;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+#inputPokemon {
+        max-width: 120px;
+        font-size: 12px;
+        padding: 15px 5px;
+
+        }
+}
+
+#inputPokemon:hover{
+    background-color: rgba(255, 255, 0, 0.812);
+    color: #000;
+}
+
+#order-by{
+    display: flex;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding:20px;
+    box-shadow: 8px 8px 10px black;
+    border-radius: 5px;
+    background-color: rgb(57, 118, 209);
+    width: 135px;
+    border: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    #order-by {
+    font-size: 12px;
+    padding: 15px 5px;
+    width: 100px;
+
+}
+}
+
+
+#order-by:hover{
+    background-color: rgba(255, 255, 0, 0.812);
+    color: #000;
+}
+
+#filter-types{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    padding:20px;
+    box-shadow: 8px 8px 10px black;
+    border-radius: 5px;
+    background-color: rgb(57, 118, 209);
+    width: 135px;
+    border: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    #filter-types {
+    font-size: 12px;
+    padding: 15px 5px;
+    width: 100px;
+
+    }
+}
+
+#filter-types:hover{
+    background-color: yellow;
+    color: #000;
+}
+
+
+
+/*paragrafo da estatistica */
+#statistics{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    display: flex;
+    background-color:  rgba(8, 9, 10, 0.3);
+    color: yellow;
+    justify-content: center;
+    margin:10px 70px;
+    align-content: center;
+    display: block;
+    padding: 8px;
+    box-shadow: 3px 3px 8px black;
+    margin-bottom: 50px;
+
+}
+
+@media screen and (max-width: 768px) {
+    #statistics {
+        width: 95%;
+        font-size: 14px;
+         margin-left: 1px;
+        margin-right: 1px;
+    }
+}
+
+.display-calc-card{
+    margin-bottom: 1px;
+
+}
+
+/* CARDS ABAIXO */
+
+#pokemonList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    gap: 30px;
+    justify-content: space-between;
+    margin: auto;
+    margin-left:15%;
+    padding-bottom: 5.5rem;
+    margin: 2;
+
+}
+
+@media (min-width: 1024px){
+#pokemonList {
+    width: 1024px;
+}
+}
+
+.div-cards {
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 280px;
+    height: 410px;
+    border-radius: 25px;
+    align-items: center;
+    /* background-color: rgba(92, 92, 199, 0.8); */
+    background-color: #3973bfd0
+}
+
+
+.flip-container {
+    width: 280px;
+    height: 310px;
+    perspective: 1000px;
+    position: relative;
+
+}
+
+.flip-container:hover .flipper{
+
+	transform: rotateY(180deg);
+
+}
+
+.flipper{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    width: 280px;
+    height: 410px;
+
+}
+
+.front, .back{
+    position: absolute;
+    box-shadow: 8px 8px 10px black;
+    font-weight: 700;
+    backface-visibility: hidden;
+    width: 280px;
+    height: 310px;
+    color: yellow;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+
+}
+
+.name-type{
+    background-color: rgba(146, 234, 46, 0.612);
+    color: black;
+    box-shadow: 3px 3px 8px black;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 2% 10%;
+}
+
+.front{
+    background-color: (92, 92, 199, 0.9);
+}
+
+.back{
+    transform: rotateY(180deg);
+    gap: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #3973bfd0;
+}
+
+.pokemonRarity{
+
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.resistance{
+
+    margin-right: 8%;
+    margin-left: 8%;
+    letter-spacing: 0.08em;
+    word-wrap: break-word;
+}
+
+.rarity-resistance{
+
+    background-color: rgba(146, 234, 46, 0.612);
+    color: black;
+    box-shadow: 3px 3px 8px black;
+    padding: 15px;
+    margin: 20% 10%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 475px) {
+    .div-cards {
+        width: 200px;
+        height: 260px;
+}
+    .flip-container {
+        width: 200px;
+        height: 260px;
+}
+    .flipper{
+        width: 200px;
+        height: 260px;
+}
+.front, .back {
+font-size: 12px;
+}
+
+}
+
+
+/* Footer */
+
+.footer {
+    background-image: radial-gradient(circle, #ffcc00b7, #ff99001e);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 2.3rem;
+
+}
+    /* Estilo para o texto "Developed by" */
+.footer p {
+    margin: 0;
+    letter-spacing: 0.11em;
+    color: #000; 
+}
+
+
+/* Estilos responsivos */
+@media screen and (min-width: 425px) {
+    .footer {
+        max-width: 100%;
+        font-size: 14px;
+    }
+}

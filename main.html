@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Esta tag é usada para especificar o modo de documento ou modo de compatibilidade que o Internet Explorer (IE) deve usar para renderizar a página da web. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PukeHub</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="main-pokemon">
+<header class="cabecalho">
+
+    <div class="div-logo">
+    <img src="image/logo.png" alt="Logo pokehub">
+    </div>
+
+    <nav class="header-nav" >
+        <ul>
+        <li>
+        <a href="home.html">Home</a>
+        </li>
+        <li>
+        <a href="main.html">Pokemons</a>
+        </li>
+        <li>
+        <a href="extra.html">Extra</a>
+        </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+    <main>
+        <section class="name-button">
+
+            <div class="input-name-pokemon" id="search-div">
+            <input type="text" id="inputPokemon" placeholder= "Search name">
+            </div>
+
+        <div class="order-input">
+            <label for="order-by"></label>
+            <select name="order" id="order-by" class="filter-order-select">
+                <option value="" >Order by</option>
+                <option value="a-z"> A - Z </option>
+                <option value="z-a"> Z - A </option>
+            </select>
+        </div>
+
+        <div class="type-input">
+
+            <label for="filter-types"></label>
+            <select name="types" id="filter-types" class="filter-order">
+            <option > Type </option>
+            <option value="grass">Grass</option>
+            <option value="poison">Poison</option>
+            <option value="fire">Fire</option>
+            <option value="electric">Eletric</option>
+            <option value="steel">Steel</option>
+            <option value="dragon">Dragon</option>
+            <option value="fairy">Fairy</option>
+            <option value="ghost">Ghost</option>
+            <option value="ice">Ice</option>
+            <option value="bug">Bug</option>
+            <option value="fighting">Fighting</option>
+            <option value="normal">Normal</option>
+            <option value="psychic">Psychic</option>
+            <option value="dark">Dark</option>
+            <option value="ground">Ground</option>
+            <option value="flying">Flying</option>
+            </select>
+        </div>
+        </section>
+
+        <section class="display-calc-card">
+            <p id="statistics">Here you are gonna find 251 types of pokemons.</p>
+        </section>
+
+            <section class="allPokemons" id="pokemonList">
+            </section>
+
+
+    
+
+            <footer class="footer">
+          
+                <p class="developer"> Developed by: <strong> Rafaela </strong>
+                <a href="https://github.com/RafaelaMiliano" target="_blank">
+                    <img src="./image/icon_GitHub.png" alt="GitHub Logo">
+                </a>
+                <strong> Tamara </strong>  
+                <a href="https://github.com/tamarataraujo" target="_blank">
+                    <img src="./image/icon_GitHub.png" alt="GitHub Logo">
+                </a></p>
+  
+          </footer>
+      
+
+    </main>
+    
+    <script src="./data/pokemon/pokemon.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
